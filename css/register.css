@@ -1,0 +1,69 @@
+body{
+    background-image: url('../images/mural.jpg');
+    
+    background-size: cover;
+    height: 100vh;
+}
+
+
+h3{
+    font-family: 'Raleway';
+    font-size: 100px;
+    margin-top: 400px;
+}
+
+
+.form-container{
+    width: 550px;
+    height: 750px;
+    margin-left: 950px;
+    margin-top: -350px;
+    background-color: rgb(172, 146, 196);
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.9);
+    min-height: calc(100vh - 20rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .box{
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+ }
+
+ p{
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'Cabin';
+ }
+ 
+
+ .btn{
+border-radius: .5rem;
+   color:#fff;
+   display: flex;
+   margin-top:50px;
+   width: 170px;
+   height: 45px;
+   background-color:#8e44ad;
+   text-align: center;
+   font-size: 25px;
+   cursor: pointer;
+   border: none;
+   text-transform: capitalize;
+ 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
