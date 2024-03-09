@@ -287,9 +287,25 @@
    margin-top: 20px;
 
 }
+
+.discuss-state{
+   margin-top: 200px;
+
+}
+
+.add{
+   justify-content: center;
+   text-align: center;
+   width: 60px;
+   height: 30px;
+   border: none;
+   border-radius: 10px;
+}
  
  #discuss-container {
-    margin-top: 100px;
+    margin-top: 200px;
+    width: 500px;
+    height: 500px;
  }
  
  .post {
@@ -313,6 +329,14 @@
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+ }
+
+ #dbutton{
+   margin-top: 100px;
+   margin-left: 400px;
+   width:300px;
+   border: none;
+   border-radius: 20px;
  }
  
  button:hover {
