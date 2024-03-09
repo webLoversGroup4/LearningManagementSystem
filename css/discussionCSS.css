@@ -244,14 +244,18 @@
     text-align: center;
  }
  
- main {
-    max-width: 800px;
-    margin: 20px auto;
+ .discuss {
+    width: 1400px;
+    height: 500px;
+    background-color:#e4cee7;
+    margin-left: 200px ;
+    margin-top: 100px;
     padding: 0 20px;
+    box-shadow: 5px 5px 10px black;
  }
 
  .question{
-   width:900px;
+   width:400px;
    height:100px;
    background-color: #9f78ad;
 
