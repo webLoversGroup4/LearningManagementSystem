@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Yellowtail&display=swap" rel="stylesheet">
+   <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/discussionCSS.css">
+</head>
+<body>
+    <!--Header -->
+<header class="header">
+   
+    <section class="flex">
+ 
+       <a href="home.html" class="logo">Learnify</a>
+ 
+       <form action="search.html" method="post" class="search-form">
+          <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+          <button type="submit" class="fas fa-search"></button>
+       </form>
+
+       <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="user-btn" class="fas fa-user"></div>
+        <div id="toggle-btn" class="fas fa-sun"></div>
+     </div>
+
+     </div>
+
+       
+    </header>  
+
+
+
+
+
+
+<!-- Navigation bar with  about, discussions, courses, lecturers-->
+
+<div class="side-bar">
+
+    <div id="close-btn">
+       <i class="fas fa-times"></i>
+    </div>
+ 
+    <div class="profile">
+       <img src="stud1.jpg" class="image" alt="">
+       <h3 class="name">Abena Otoo</h3>
+       <p class="role">Student</p>
+       <a href="profile.html" class="button">View profile</a>
+    </div>
+ 
+    <nav class="navbar">
+       <a href="homeTry.html"><i class="fas fa-home"></i><span>Home</span></a>
+       <a href="about.html"><i class="fas fa-question"></i><span>About</span></a>
+       <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+        <a href="quizpage.html"><i class="fas fa-chalkboard-user"></i><span>Quizzes and Assignments</span></a>
+       <a href="discussions.html"><i class="fas fa-headset"></i><span>Discussion</span></a>
+    </nav>
+
+
+ 
+ </div>
+
+
+ <header>
+    <h1>Discussion Forum</h1>
+ </header>
+
+   <h1 id="discuss-state">Start A Discussion</h1>
+  <!--<button class="add">Add</button> --> 
+
+ 
+ <section class="discuss">
+   <div class="question">
+      
+      <div id="discuss-container">
+         <form id="post-form">
+            <textarea id="post-content" placeholder="Write your discussion here..."></textarea>
+            <button type="submit">Reply</button>
+         </form>
+      </div> 
+      
+
+     
+      
+ </section>
+ <section>
+   <h1>Previous Discussions</h1>
+ </section>
+ 
+ <div id="past-question">
+   <h2 id="post-name"><i class="fa-solid fa-user"></i>  David B</h2>
+   <h2 id="post-position">Lecturer</h2>
+   <p id="questions">What are the contributions AI has made to web technologies?</p>
+   <p>5 replies</p>
+ </div>
+ <button id="dbutton">View More Discussions</button>
+ 
+      
+
+ <!--
+
+
+ <main>
+
+    
+
+    
+    
+    
+ </main>
+-->
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const postForm = document.getElementById('post-form');
+    const postsContainer = document.getElementById('discuss-container');
+    
+    postForm.addEventListener('submit', function(event) {
+       event.preventDefault();
+       const postContent = document.getElementById('post-content').value;
+       if (postContent.trim() === '') return;
+       const postElement = document.createElement('div');
+       postElement.classList.add('post');
+       postElement.style.fontSize = '24px'
+       postElement.textContent = postContent;
+       postsContainer.prepend(postElement);
+       postForm.reset();
+    });
+ });
+ </script>
+</body>
+
+    
+</body>
+<<<<<<< HEAD
+</html>
+=======
+</html>
+>>>>>>> origin/main
