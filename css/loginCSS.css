@@ -1,8 +1,7 @@
 body{
   /* background-image: url('/images/mural2.jpg');*/
   background-color: #eee;
-    
-    background-size: cover;
+background-size: cover;
     height: 100vh;
     
 }
@@ -46,14 +45,11 @@ color: white;
 .form-container{
     width: 500px;
     height: 450px;
-    /*background-color: rgb(172, 146, 196);*/
-    background-color:#8e44ad;
-    /*opacity: 0.4;*/ 
+   background-color:#8e44ad;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.9);
     align-items: center;
-    /*background: transparent;*/
     margin-left: 650px;
-    border-radius: 15px;
+    border-radius: 25px;
     margin-top: 150px;
     display: flex;
     flex-direction: column;

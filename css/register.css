@@ -1,11 +1,11 @@
 body{
-    background-image: url('../images/mural.jpg');
-    
+   /* background-image: url('../images/mural.jpg');*/
     background-size: cover;
+    background-color: #eee;
     height: 100vh;
 }
 
-video {
+/*video {
    position: fixed;
    top: 50%;
    left: 50%;
@@ -15,14 +15,27 @@ video {
    height: auto;
    transform: translate(-50%, -50%);
    z-index: -1;
+}*/
+
+.title{
+   margin-top: -40px;
+   text-align: center;
+   font-size: 30px;
+
+}
+
+h1{
+   color: #8e44ad;
+   font-size: 40px;
+   font-family: 'Yellowtail';
 }
 
 
 h3{
     font-family: 'Raleway';
     font-size: 100px;
-    margin-top: 400px;
-    color: white;
+    margin-top: 350px;
+    color:#8e44ad ;
 }
 
 
@@ -30,7 +43,7 @@ h3{
     width: 550px;
     height: 750px;
     margin-left: 950px;
-    margin-top: -350px;
+    margin-top: -400px;
     background-color: rgb(172, 146, 196);
     box-shadow: 0 0px 6px rgba(0, 0, 0, 0.9);
     min-height: calc(100vh - 20rem);
