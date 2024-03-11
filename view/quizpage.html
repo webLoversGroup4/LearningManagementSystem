@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<!--Header -->
+<!--Header 
 <header class="header">
    
     <section class="flex">
@@ -39,9 +39,45 @@
 
      </div>
 
+
+
        
     </header>  
+-->
 
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="/view/home.html" class="logo">Learnify</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="Search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="/images/stud1.jpg" class="image" alt="">
+         <h3 class="name">Abena Otoo</h3>
+         <p class="role">Student</p>
+         <a href="/view/profile.html" class="btn">View Profile</a>
+         <div class="flex-btn">
+            <a href="/view/login.html" class="option-btn">Login</a>
+            <a href="/view/register.html" class="option-btn">Register</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
 
 
 
@@ -56,17 +92,18 @@
     </div>
  
     <div class="profile">
-       <img src="stud1.jpg" class="image" alt="">
+       <img src="/images/stud1.jpg" class="image" alt="">
        <h3 class="name">Abena Otoo</h3>
        <p class="role">Student</p>
-       <a href="profile.html" class="button">view profile</a>
+       <a href="/view/profile.html" class="button">View profile</a>
     </div>
  
     <nav class="navbar">
        <a href="/view/homeTry.html"><i class="fas fa-home"></i><span>Home</span></a>
+       <a href="/view/about.html"><i class="fas fa-info-circle"></i><span>About</span></a>
        <a href="/view/courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
-       <a href="/view/quizpage.html"><i class="fas fa-chalkboard-user"></i><span>Quizzes and Assignments</span></a>
-       <a href="/view/discussions.html"><i class="fas fa-question"></i><span>Discussions</span></a>
+       <a href="/view/quizpage.html"><i class="fas fa-chalkboard-user"></i><span>Quizzes</span></a>
+       <a href="/view/discussions.html"><i class="fas fa-envelope"></i><span>Discussions</span></a>
        
     </nav>
 

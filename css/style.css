@@ -74,6 +74,12 @@ section{
    text-transform: capitalize;
 }
 
+.logo{
+   color: #8e44ad;
+   font-size: 50px;
+   font-family: 'Yellowtail';
+}
+
 .inline-btn,
 .inline-option-btn,
 .inline-delete-btn,

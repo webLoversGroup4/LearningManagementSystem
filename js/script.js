@@ -62,3 +62,20 @@ window.onscroll = () =>{
       body.classList.remove('active');
    }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+   const postForm = document.getElementById('post-form');
+   const postsContainer = document.getElementById('discuss-container');
+   
+   postForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const postContent = document.getElementById('post-content').value;
+      if (postContent.trim() === '') return;
+      const postElement = document.createElement('div');
+      postElement.classList.add('post');
+      postElement.style.fontSize = '24px'
+      postElement.textContent = postContent;
+      postsContainer.prepend(postElement);
+      postForm.reset();
+   });
+});
