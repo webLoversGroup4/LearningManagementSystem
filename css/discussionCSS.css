@@ -56,6 +56,66 @@
  body.active{
     padding-left: 0;
  }
+
+ .inline-btn,
+.inline-option-btn,
+.inline-delete-btn,
+.btn,
+.delete-btn,
+.option-btn{
+   border-radius: .5rem;
+   color:#fff;
+   font-size: 1.8rem;
+   cursor: pointer;
+   text-transform: capitalize;
+   padding:1rem 3rem;
+   text-align: center;
+   margin-top: 1rem;
+}
+
+.btn,
+.delete-btn,
+.option-btn{
+   display: block;
+   width: 100%;
+}
+
+.inline-btn,
+.inline-option-btn,
+.inline-delete-btn{
+   display: inline-block;
+}
+
+.btn,
+.inline-btn{
+   background-color: var(--main-color);
+}
+
+.option-btn,
+.inline-option-btn{
+   background-color:var(--orange);
+}
+
+.delete-btn,
+.inline-delete-btn{
+   background-color: var(--red);
+}
+
+.inline-btn:hover,
+.inline-option-btn:hover,
+.inline-delete-btn:hover,
+.btn:hover,
+.delete-btn:hover,
+.option-btn:hover{
+   background-color: var(--black);
+   color: var(--white);
+}
+
+.flex-btn{
+   display: flex;
+   gap: 1rem;
+}
+
  
  section{
     padding:2rem;
@@ -79,9 +139,13 @@
     padding: 1.5rem 2rem;
  }
  
- .header .flex .logo{
-    font-size: 2.5rem;
-    color: var(--black);
+   .header .flex .logo{
+      color: #8e44ad;
+      font-size: 50px;
+      font-family: 'Yellowtail';
+      /*font-size: 2.5rem;
+      color: var(--black);*/
+   
  }
  
  .header .flex .search-form{
@@ -385,10 +449,13 @@
 
 }
 
-.discuss-state{
-   margin-top: 200px;
-   margin-left: 600px;
+#discuss-state{
+   margin-top: 90px;
+   margin-left: 150px;
+   font-size: 100px;
+   font-family: 'Raleway';
    text-align: center;
+   
 
 }
 
@@ -402,22 +469,38 @@
 }
  
  #discuss-container {
-    margin-top: 200px;
-    width: 500px;
+    margin-top: 100px;
+    width: 800px;
     height: 500px;
+    width: 1000px;
+    margin-bottom: 50px;
+    height: 500px;
+    justify-content: center;
+    margin-left: 250px;
+    margin-top: 200px;
+    border: none;
+    border-radius: 15px;
+    background-color:#8e44ad(255, 0, 234, 0.5);
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.9);
+    /*background-color: #8e44ad;*/
  }
- 
- .post {
+/*
+ #post-form {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     padding: 10px;
+    margin-left: 60px;
+    margin-top: 100px;
+    width: 550px;
     margin-bottom: 10px;
  }
- 
+ */
  #post-content {
-    width: 600px;
-    height: 100px;
-    margin-bottom: 10px;
+    width: 650px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    margin-left: 60px;
     font-size: 30px;
     font-family: 'Raleway';
  }
@@ -425,7 +508,12 @@
  button {
     background-color: #d400ff;
     color: #fff;
+    display: flex;
+    width: 100px;
+    height: 50px;
     border: none;
+    margin-left: 450px;
+    justify-content: center;
     padding: 10px 20px;
     cursor: pointer;
  }
@@ -445,5 +533,81 @@
  }
  
  button:hover {
-    background-color: #0056b3;
+    background-color: plum;
  }
+ @media (max-width:1200px){
+
+   body{
+      padding-left: 0;
+   }
+
+   .side-bar{
+      left: -30rem;
+      transition: .2s linear;
+   }
+
+   .side-bar #close-btn{
+      display: block;
+   }
+
+   .side-bar.active{
+      left: 0;
+      box-shadow: 0 0 0 100vw rgba(0,0,0,.8);
+      border-right: 0;
+   }
+
+}
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px){
+
+   #search-btn{
+      display: inline-block;
+   }
+
+   .header .flex .search-form{
+      position: absolute;
+      top: 99%; left: 0; right: 0;
+      border-top: var(--border);
+      border-bottom: var(--border);
+      background-color: var(--white);
+      border-radius: 0;
+      width: auto;
+      padding: 2rem;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: .2s linear;
+   }
+
+   .header .flex .search-form.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+   .flex-btn{
+      gap: 0;
+      flex-flow: column;
+   }
+
+   .home-grid .box-container{
+      grid-template-columns: 1fr;
+   }
+
+   .about .row .image img{
+      height: 25rem;
+   }
+
+}

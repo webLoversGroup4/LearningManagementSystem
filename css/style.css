@@ -1022,6 +1022,112 @@ section{
    color: white;
 
 }
+.discuss {
+   width: 650px;
+   height: 300px;
+   background-color:#e4cee7;
+   margin-left: 200px ;
+   margin-top: 50px;
+   padding: 0 20px;
+   box-shadow: 5px 5px 10px black;
+}
+
+h1{
+  font-size: 40px;
+  font-family: 'Cabin';
+}
+
+.question{
+  width:600px;
+  height:100px;
+  /*margin: 60px;*/
+  margin-top: 60px;
+  background-color: white;
+
+}
+
+#post-name{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Raleway';
+}
+
+#post-position{
+  font-size: 15px;
+  font-family: 'Cabin';
+  margin-left:25px;
+
+}
+
+#questions{
+  font-size: 20px;
+  font-family: 'Raleway';
+  margin-top: 20px;
+
+}
+
+.discuss-state{
+  margin-top: 200px;
+  margin-left: 600px;
+  text-align: center;
+
+}
+
+.add{
+  justify-content: center;
+  text-align: center;
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+
+#discuss-container {
+   margin-top: 200px;
+   width: 500px;
+   height: 500px;
+}
+
+.post {
+   background-color: #f9f9f9;
+   border: 1px solid #ddd;
+   padding: 10px;
+   margin-bottom: 10px;
+}
+
+#post-content {
+   width: 600px;
+   height: 100px;
+   margin-bottom: 10px;
+   font-size: 30px;
+   font-family: 'Raleway';
+}
+
+button {
+   background-color: #d400ff;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
+}
+
+#dbutton{
+  margin-top: 100px;
+  margin-left: 400px;
+  width:300px;
+  border: none;
+  border-radius: 20px;
+}
+#past-question{
+  width: 100%;
+  height: 110px;
+  box-shadow: 0px 0px 5px black;
+
+}
+
+button:hover {
+   background-color: #0056b3;
+}
 
 .footer{
    background-color: var(--white);
