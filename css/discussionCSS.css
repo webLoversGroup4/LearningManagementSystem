@@ -417,7 +417,7 @@
 
  h1{
    font-size: 40px;
-   font-family: 'Cabin';
+   font-family: 'Raleway';
  }
 
  .question{
@@ -467,11 +467,18 @@
    border: none;
    border-radius: 10px;
 }
+
+
+.seperate{
+   width: 3500px;
+   height: 40px;
+   background-color: #d400ff
+}
  
  #discuss-container {
     margin-top: 100px;
     width: 800px;
-    height: 500px;
+    height: 750px;
     width: 1000px;
     margin-bottom: 50px;
     height: 500px;
@@ -496,10 +503,10 @@
  }
  */
  #post-content {
-    width: 650px;
-    height: 200px;
+    width: 850px;
+    height: 300px;
     margin-bottom: 20px;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-left: 60px;
     font-size: 30px;
     font-family: 'Raleway';
@@ -509,10 +516,13 @@
     background-color: #d400ff;
     color: #fff;
     display: flex;
-    width: 100px;
+    font-size: 30px;
+    width: 300px;
     height: 50px;
     border: none;
-    margin-left: 450px;
+    margin-left: 350px;
+    border: none;
+    border-radius: 20px;
     justify-content: center;
     padding: 10px 20px;
     cursor: pointer;
@@ -520,8 +530,8 @@
 
  #dbutton{
    margin-top: 100px;
-   margin-left: 400px;
-   width:300px;
+   margin-left:400px;
+   width:500px;
    border: none;
    border-radius: 20px;
  }
@@ -531,6 +541,20 @@
    box-shadow: 0px 0px 5px black;
 
  }
+
+
+ video {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   min-width: 1000px;
+   min-height: 850px;
+   width: auto;
+   height: auto;
+   transform: translate(-50%, -50%);
+   z-index: -1;
+}
+
  
  button:hover {
     background-color: plum;
