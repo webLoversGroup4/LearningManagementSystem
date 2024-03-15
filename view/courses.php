@@ -97,8 +97,8 @@
             <span>10 lessons</span>
          </div>
          <h3 class="title">HTML tutorial</h3>
-         <a href="#" class="inline-btn">Enroll</a>
-      </div>
+       <!--  <a href="#" class="inline-btn">Enroll</a>-->
+      </div> 
 
       <div class="box">
          <div class="tutor">
@@ -113,7 +113,7 @@
             <span>10 lessons</span>
          </div>
          <h3 class="title">Communication in Business</h3>
-         <a href="#" class="inline-btn">Enroll</a>
+        <!-- <a href="#" class="inline-btn">Enroll</a>--> 
       </div>
 
 
@@ -130,7 +130,7 @@
             <span>10 lessons</span>
          </div>
          <h3 class="title">PHP tutorial</h3>
-         <a href="#" class="inline-btn">Enroll</a>
+        <!--<a href="#" class="inline-btn">Enroll</a> --> 
       </div>
 
       <div class="box">
@@ -146,7 +146,7 @@
             <span>10 lessons</span>
          </div>
          <h3 class="title">MySQL tutorial</h3>
-         <a href="#" class="inline-btn">Enroll</a>
+         <!--<a href="#" class="inline-btn">Enroll</a>-->
       </div>
 
 
@@ -155,7 +155,7 @@
 </section>
 
 
-<button class="add-button"> Add Courses</button>
+
 
 
 
