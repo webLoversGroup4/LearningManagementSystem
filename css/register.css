@@ -1,95 +1,72 @@
-body{
-   /* background-image: url('../images/mural.jpg');*/
+body {
     background-size: cover;
-    background-color: #eee;
+    background-color: #fff; /* Same as the first CSS file */
     height: 100vh;
+    font-family: 'EB Garamond', sans-serif;
 }
 
-/*video {
-   position: fixed;
-   top: 50%;
-   left: 50%;
-   min-width: 100%;
-   min-height: 100%;
-   width: auto;
-   height: auto;
-   transform: translate(-50%, -50%);
-   z-index: -1;
-}*/
-
-.title{
-   margin-top: -40px;
-   text-align: center;
-   font-size: 30px;
-
+.title {
+    margin-top: 3vh; /* Adjusted to match the first CSS file */
+    text-align: center;
+    font-size: 5vw;
+    color: #663399; /* Same as the first CSS file */
 }
 
-h1{
-   color: #8e44ad;
-   font-size: 40px;
-   font-family: 'Yellowtail';
+h1 {
+    text-align: center;
+    font-size: 5vw;
+    color: #663399; /* Same as the first CSS file */
+    margin-top: 3vh;
 }
 
-
-h3{
-    font-family: 'Raleway';
-    font-size: 100px;
-    margin-top: 350px;
-    color:#8e44ad ;
+h3 {
+    font-size: 2vw;
+    text-align: center;
+    color: #000; /* Same as the first CSS file */
 }
 
-
-.form-container{
-    width: 550px;
-    height: 750px;
-    margin-left: 950px;
-    margin-top: -400px;
-    background-color: rgb(172, 146, 196);
-    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.9);
-    min-height: calc(100vh - 20rem);
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 10vh auto;
+    padding: 0.25vw;
+    background-color: #B9BFFF; /* Same as the first CSS file */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
- }
+}
 
- .box{
-    width: 300px;
-    height: 50px;
+.box {
+    width: 80%;
+    max-width: 300px;
+    height: 5vh;
+    margin-bottom: 2vh;
+    padding: 1vw;
     border: none;
     border-radius: 20px;
- }
+}
 
- p{
-    font-size: 19px;
-    font-weight: bold;
-    font-family: 'Cabin';
- }
- 
+p {
+    color: white;
+    font-size: 1.5vw;
+}
 
- .btn{
-border-radius: .5rem;
-   color:#fff;
-   display: flex;
-   margin-top:50px;
-   width: 170px;
-   height: 45px;
-   background-color:#8e44ad;
-   text-align: center;
-   font-size: 25px;
-   cursor: pointer;
-   border: none;
-   text-transform: capitalize;
- 
- }
+.btn {
+    width: 100%;
+    max-width: 600px;
+    height: 5vh;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    font-size: 1.5vw;
+    background-color: #663399; /* Same as the first CSS file */
+    border: none;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    color: #fff;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.btn:hover {
+    background-color: #a64dff; /* Same as the first CSS file */
+}
