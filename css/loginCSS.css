@@ -1,94 +1,154 @@
-body{
-  /* background-image: url('/images/mural2.jpg');*/
-  background-color: #eee;
-background-size: cover;
-    height: 100vh;
-    
-}
-/*video {
-   position: fixed;
-   top: 50%;
-   left: 50%;
-   min-width: 100%;
-   min-height: 100%;
-   width: auto;
-   height: auto;
-   transform: translate(-50%, -50%);
-   z-index: -1;
-}*/
 
-
-h1{
-    text-align: center;
-    font-size: 150px;
-    color: #8e44ad;
-    font-family: 'EB Garamond', sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-#title2{
-   text-align: center;
-   font-size: 50px;
-   color: rgb(177, 91, 177);
-   font-family: 'Cabin';
-   margin-top:-130px;
-
+body {
+  background-color: #fff;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'EB Garamond', sans-serif; 
 }
 
-h3{
-font-size: 30px;
-text-align: center;
-color: white;
+h1 {
+  text-align: center;
+  font-size: 5vw; 
+  color: #663399;
+  margin-top: 3vh;
+}
 
+#title2 {
+  text-align: center;
+  font-size: 3vw; 
+  color: rgb(177, 91, 177);
+  font-family: 'Cabin';
+  margin-top: 1.5vh;
+}
+
+h3 {
+  font-size: 2vw; 
+  text-align: center;
+  color: #000;
 }
 
 
-.form-container{
-    width: 500px;
-    height: 450px;
-    background-color:#8e44ad;
-    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.9);
-    align-items: center;
-    margin-left: 650px;
-    border-radius: 25px;
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-}
-
-p{
-   color: white;
-   font-size: 25px;
-}
-
-span{
-    color: red;
-}
-
-   
-
-
- .box{
-    width: 300px;
-    height: 50px;
-    border: none;
-    border-radius: 20px;
- }
-
- .button{
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 10vh auto;
+  padding: 0.25vw;
+  background-color: #B9BFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container a {
   text-align: center;
-  justify-content: center;
-  width: 200px;
-  height: 50px;
+}
+.button {
+  width: 100%;
+  max-width: 600px;
+  height: 5vh;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  font-size: 1.5vw;
+  background-color: #663399; 
   border: none;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  margin-left:30px ;
+  border-radius: 15px;
+  transition: background-color 0.3s; 
+  float: left;
+  color: #fff;
+}
+a {
+  color: dodgerblue;
+}
+.signin {
+  background-color: #f1f1f1;
   text-align: center;
-  font-size: 20px;
-  background-color: rgb(211, 121, 219);
+}
+
+#message {
+  display:none;
+  background:  #B9BFFF;
+  color: #663399;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+input[type=email],input[type=password],input[type=file],input[type=text],select[name=role] {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  border-radius: 15px;
+}
+
+
+.button:hover {
+  background-color: #a64dff; 
+}
+
+p {
+  color: white;
+  font-size: 1.5vw; 
+}
+
+span {
+  color: red;
+}
+
+.box {
+  width: 80%;
+  max-width: 300px; 
+  height: 5vh; 
+  margin-bottom: 2vh; 
+  padding: 1vw; 
+  border: none;
   border-radius: 20px;
+}
 
- }
+.footer {
+  text-align: center;
+  margin-top: 5vh; 
+  color: white;
+  font-size: 1.2vw; 
+}
 
-
+.footer span {
+  font-weight: bold;
+}

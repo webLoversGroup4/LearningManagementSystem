@@ -12,67 +12,12 @@
    
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
-
+<?php include '../functions/user_header_fxn.php'; ?>
 <header class="header">
-   
-   <section class="flex">
-
-      <a href="/view/home.html" class="logo">Learnify</a>
-
-      <form action="search.html" method="post" class="search-form">
-         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
-         <button type="submit" class="fas fa-search"></button>
-      </form>
-
-      <div class="icons">
-         <div id="menu-btn" class="fas fa-bars"></div>
-         <div id="search-btn" class="fas fa-search"></div>
-         <div id="user-btn" class="fas fa-user"></div>
-         <div id="toggle-btn" class="fas fa-sun"></div>
-      </div>
-
-      <div class="profile">
-         <img src="/images/stud1.jpg" class="image" alt="">
-         <h3 class="name">Abena Otoo</h3>
-         <p class="role">Student</p>
-         <a href="profile.html" class="btn">View profile</a>
-         <div class="flex-btn">
-            <a href="login.html" class="option-btn">Log in</a>
-            <a href="register.html" class="option-btn">Register</a>
-         </div>
-      </div>
-
-   </section>
-
-</header>   
-
-<div class="side-bar">
-
-   <div id="close-btn">
-      <i class="fas fa-times"></i>
-   </div>
-
-   <div class="profile">
-      <img src="/images/stud1.jpg" class="image" alt="">
-      <h3 class="name">Abena Otoo</h3>
-      <p class="role">Student</p>
-      <a href="profile.html" class="btn">View profile</a>
-   </div>
-
-   <nav class="navbar">
-      <a href="/view/home.html"><i class="fas fa-home"></i><span>Home</span></a>
-      <a href="/view/about.html"><i class="fas fa-question"></i><span>About</span></a>
-      <a href="/view/courses.html"><i class="fas fa-book"></i><span>Courses</span></a>
-      <a href="/view/quizpage.html"><i class="fas fa-chalkboard-user"></i><span>Quizzes</span></a>
-      <a href="/view/discussions.html"><i class="fas fa-envelope"></i><span>Discussions</span></a>
-   </nav>
-
-</div>
-
 <section class="about">
 
    <div class="row">
@@ -87,7 +32,7 @@
          <h3>Why Choose Us?</h3>
          <p><strong><em>We want to help you learn</em></strong></p>
          <p>We are dedicated to revolutionizing the way people learn. Our platform brings together experts from various fields to create an engaging and interactive learning experience for individuals of all ages and backgrounds.</p>
-         <a href="/view/courses.html" class="inline-btn">Our courses</a>
+         <a href="courses.php" class="inline-btn">Our courses</a>
       </div>
 
    </div>
@@ -98,7 +43,7 @@
          <i class="fas fa-book"></i>
          <div>
             <h3>50</h3>
-            <p>Online courses</p>
+            <p>online courses</p>
          </div>
       </div>
 
@@ -120,7 +65,7 @@
 
 <section class="reviews">
 
-   <h1 class="heading">Student's Reviews</h1>
+   <h1 class="heading">Student's reviews</h1>
 
    <div class="box-container">
 
@@ -218,8 +163,7 @@
    &copy; copyright @ 2024 by <span>Learnify</span>
 </footer>
 
-<!-- custom js file link  -->
-<script src="/js/script.js"></script>
+<script src="../js/script.js"></script>
 
    
 </body>
